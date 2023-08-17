@@ -9,7 +9,10 @@ def print_fibonacci(length):
         for i in range(2, length):
             next_fibonacci = fibonacci_sequence[i - 1] + fibonacci_sequence[i - 2]
             fibonacci_sequence.append(next_fibonacci)
-        for num in fibonacci_sequence:
-            print(num)
+        print(f"[{', '.join(map(str, fibonacci_sequence))}]")
+
+# Test cases
+print_fibonacci(2)  # Output: [0, 1]
+
 
     
